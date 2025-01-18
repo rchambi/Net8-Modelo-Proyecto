@@ -1,0 +1,20 @@
+﻿----Esto es codigo VS code
+dotnet new webapi -n RegistroPersonasNet8
+cd RegistroPersonasNet8
+
+
+------IMPOERTANTE PARA AMBOS
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+
+----Esto es codigo VS code
+dotnet restore --> actualizar dependencias
+dotnet build
+dotnet run --project proyectModelo.csproj
+
+
+MIGRATION
+dotnet ef migrations add InitialCreate --project proyectModelo.Repositories -->nombre donde esta migration
+dotnet ef database update --project proyectModelo.Repositories--> nombre donde esta migration
