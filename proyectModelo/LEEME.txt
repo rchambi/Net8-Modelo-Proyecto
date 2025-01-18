@@ -18,3 +18,7 @@ dotnet run --project proyectModelo.csproj
 MIGRATION
 dotnet ef migrations add InitialCreate --project proyectModelo.Repositories -->nombre donde esta migration
 dotnet ef database update --project proyectModelo.Repositories--> nombre donde esta migration
+
+
+NOTA
+EN LA BASE local db crear una db llamada test y copiar el nombre del server localDB
